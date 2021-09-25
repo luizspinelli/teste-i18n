@@ -3,7 +3,7 @@ module.exports = {
         defaultLanguage: "pt",
         defaultNS: "common",
         fallbackLng: "pt",
-        localePath: "/public/locales",
+        localePath: "./public/locales",
         defaultLocale: "pt",
         locales: ["pt", "es", "en"],
         interpolation: {
