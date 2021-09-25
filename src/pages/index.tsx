@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -7,9 +7,7 @@ export default function Home() {
   return <div>{t("home")}</div>;
 }
 
-export const getServerSideProps: GetServerSideProps<any> = async ({
-  locale,
-}) => ({
+export const getStaticProps: GetStaticProps<any> = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale!, ["home"])),
   },
