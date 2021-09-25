@@ -3,7 +3,7 @@ module.exports = {
         defaultLanguage: "pt",
         defaultNS: "common",
         fallbackLng: "pt",
-        localePath: typeof window === "undefined" ? "public/locales" : "locales",
+        localePath: "/public/locales",
         defaultLocale: "pt",
         locales: ["pt", "es", "en"],
         interpolation: {
