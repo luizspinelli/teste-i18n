@@ -1,14 +1,15 @@
 module.exports = {
     i18n: {
-        locales: ["pt", "es", "en"],
+        defaultLanguage: "pt",
+        defaultNS: "common",
+        fallbackLng: "pt",
+        localePath: typeof window === "undefined" ? "public/locales" : "locales",
         defaultLocale: "pt",
+        locales: ["pt", "es", "en"],
+        interpolation: {
+            escapeValue: false,
+        },
     },
-    defaultNS: "home",
-    fallbackLng: "pt",
-    interpolation: {
-        escapeValue: false,
-    },
-    localePath: typeof window === "undefined" ? "./public/locales" : "locales",
     react: {
         useSuspense: false,
         wait: true,
